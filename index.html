@@ -25,9 +25,17 @@
         }
 
         label {
-            display: block;
             margin-top: 15px;
             margin-bottom: 5px;
+        }
+
+        label:not(.option-label) {
+            display: block;
+        }
+
+        .option-label {
+            display: inline;
+            margin: 0;
         }
 
         input, select, textarea {
@@ -71,20 +79,20 @@
 
             <label>Gender:</label>
             <input class="option" type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
+            <label class="option-label" for="male">Male</label>
 
             <input class="option" type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
+            <label class="option-label" for="female">Female</label>
 
             <label>Hobbies:</label>
             <input class="option" type="checkbox" id="gaming" name="hobbies" value="gaming">
-            <label for="gaming">Gaming</label>
+            <label class="option-label" for="gaming">Gaming</label>
 
             <input class="option" type="checkbox" id="music" name="hobbies" value="music">
-            <label for="music">Music</label>
+            <label class="option-label" for="music">Music</label>
 
             <input class="option" type="checkbox" id="sports" name="hobbies" value="sports">
-            <label for="sports">Sports</label>
+            <label class="option-label" for="sports">Sports</label>
 
             <label for="dob">Date of Birth:</label>
             <input type="date" id="dob" name="dob">
@@ -109,4 +117,3 @@
 
 </body>
 </html>
-```
